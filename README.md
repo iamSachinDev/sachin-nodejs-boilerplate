@@ -97,7 +97,7 @@ npm install
 Copy `.env.example` to `.env` and update values:
 ```bash
 MONGO_URI=mongodb://localhost:27017/myProject
-PORT=3000
+PORT=7777
 NODE_ENV=development
 ```
 
@@ -117,8 +117,8 @@ docker compose up --build
 npm run dev
 ```
 
-✅ Server: [http://localhost:3000](http://localhost:3000)  
-📘 Swagger Docs: [http://localhost:3000/docs](http://localhost:3000/docs)
+✅ Server: [http://localhost:7777](http://localhost:7777)  
+📘 Swagger Docs: [http://localhost:7777/docs](http://localhost:7777/docs)
 
 ---
 
@@ -132,7 +132,7 @@ npm run dev
 
 Example:
 ```bash
-curl -X POST http://localhost:3000/api/users \
+curl -X POST http://localhost:7777/api/users \
   -H "Content-Type: application/json" \
   -d '{"name": "Sachin Talekar", "email": "sachin@example.com"}'
 ```
@@ -165,7 +165,7 @@ docker compose up --build
 ```
 
 Access:
-- API → http://localhost:3000  
+- API → http://localhost:7777  
 - MongoDB → mongodb://localhost:27017/myProject  
 
 ---

@@ -4,7 +4,7 @@ const opts = {
   definition: {
     openapi: '3.1.0',
     info: { title: 'MyProject API', version: '1.0.0' },
-    servers: [{ url: 'http://localhost:3000/api' }]
+    servers: [{ url: 'http://localhost:7777/api' }]
   },
   apis: ['./src/apis/**/*.routes.js']
 }

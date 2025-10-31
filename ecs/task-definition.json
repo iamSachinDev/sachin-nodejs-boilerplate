@@ -10,10 +10,10 @@
       "name": "myProject",
       "image": "<your-account-id>.dkr.ecr.ap-south-1.amazonaws.com/myProject:latest",
       "essential": true,
-      "portMappings": [{ "containerPort": 3000, "hostPort": 3000 }],
+      "portMappings": [{ "containerPort": 7777, "hostPort": 7777 }],
       "environment": [
         { "name": "NODE_ENV", "value": "production" },
-        { "name": "PORT", "value": "3000" },
+        { "name": "PORT", "value": "7777" },
         { "name": "MONGO_URI", "value": "mongodb://mongo:27017/myProject" }
       ],
       "logConfiguration": {

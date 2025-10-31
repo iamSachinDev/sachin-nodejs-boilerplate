@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "7777:7777"
     env_file: .env.example
     depends_on:
       - mongo
