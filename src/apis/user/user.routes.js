@@ -1,4 +1,5 @@
 import { Router } from 'express'
+
 import { getUsers, addUser } from './user.controller.js'
 const router = Router()
 router.get('/', getUsers)

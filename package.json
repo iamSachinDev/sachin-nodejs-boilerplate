@@ -4,8 +4,10 @@
   "type": "module",
   "main": "src/Server.js",
   "scripts": {
-    "lint": "standard",
-    "lint:fix": "standard --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "standard": "standard",
+    "standard:fix": "standard --fix",
     "dev": "nodemon --watch src --exec node src/Server.js",
     "start": "node src/Server.js"
   },
@@ -17,9 +19,14 @@
     "pino-http": "^11.0.0"
   },
   "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-standard": "^4.1.0",
     "nodemon": "^3.1.10",
     "pino-pretty": "^13.1.2",
-    "standard": "^17.1.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },

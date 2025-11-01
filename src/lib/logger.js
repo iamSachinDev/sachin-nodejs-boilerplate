@@ -1,5 +1,6 @@
 import pino from 'pino'
 import pinoHttp from 'pino-http'
+
 import { SERVER_CONFIG } from '../config/env.js'
 
 const pretty = { colorize: true, translateTime: 'dd-mm-yyyy HH:MM:ss TT Z' }

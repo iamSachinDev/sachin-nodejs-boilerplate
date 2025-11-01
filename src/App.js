@@ -1,11 +1,12 @@
 import express from 'express'
-import { connectDB } from './config/db.js'
-import { Logger } from './lib/logger.js'
-import { setupSwagger } from './docs/swagger.js'
-import routes from './routes/index.js'
-import { errorHandler } from './helpers/errorHandler.js'
 
-export async function createServer () {
+import { connectDB } from './config/db.js'
+import { setupSwagger } from './docs/swagger.js'
+import { errorHandler } from './helpers/errorHandler.js'
+import { Logger } from './lib/logger.js'
+import routes from './routes/index.js'
+
+const createServer = async () => {
   const app = express()
   await connectDB()
   app.use(Logger.http)
@@ -16,3 +17,5 @@ export async function createServer () {
   app.use(errorHandler)
   return app
 }
+
+export default createServer

@@ -1,5 +1,6 @@
-import { getAllUsers, createUser } from './user.service.js'
 import { successResponse } from '../../helpers/response.js'
+
+import { getAllUsers, createUser } from './user.service.js'
 
 export async function getUsers (req, res, next) {
   try {

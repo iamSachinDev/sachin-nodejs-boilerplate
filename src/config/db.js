@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
+
 import { Logger } from '../lib/logger.js'
+
 import { SERVER_CONFIG } from './env.js'
 
 const { MONGO_URI } = SERVER_CONFIG
