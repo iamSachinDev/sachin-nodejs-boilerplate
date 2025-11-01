@@ -18,4 +18,4 @@ const createServer = async () => {
   return app
 }
 
-export default createServer
+export { createServer }

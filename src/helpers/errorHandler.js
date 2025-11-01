@@ -1,5 +1,6 @@
 import { Logger } from '../lib/logger.js'
-export function errorHandler (err, req, res, next) {
+
+export function errorHandler (err, req, res) {
   Logger.app.error(err)
   res.status(err.statusCode || 500).json({
     success: false,
